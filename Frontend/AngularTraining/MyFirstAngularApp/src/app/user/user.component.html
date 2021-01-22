@@ -1,0 +1,25 @@
+<h1> {{user.fullName}}
+  <span *ngIf="user.firstName != null && user.firstName.length !== 0">({{user.firstName}})</span>
+</h1>
+<hr>
+<div class="user-details">
+  <div class="flex-container child-item">
+    <div class="flex-row" *ngIf="(user.jobTitle != null && user.jobTitle.length !== 0)">
+      <div>Job:</div>
+      <div>{{user.jobTitle}}</div>
+    </div>
+    <div class="flex-row" *ngIf="(user.mail != null && user.mail.length !== 0)">
+      <div>Mail:</div>
+      <div>{{user.mail}}</div>
+    </div>
+    <div class="flex-row" *ngIf="(user.businessPhones != null && user.businessPhones.length !== 0)">
+      <div>Phone:</div>
+      <div>{{user.businessPhones}}</div>
+    </div>
+  </div>
+</div>
+<!-- <button (click)="changeName()">Change Name</button> -->
+
+<!-- FlexBox -->
+
+

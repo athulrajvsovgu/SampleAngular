@@ -1,0 +1,26 @@
+@import '../../variable.scss';
+
+h1 {
+  margin-bottom: -5px;
+  background-color: $color-gray;
+}
+
+div {
+  background-color: $color-blue;
+  height: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: column;
+  flex-g
+
+  div:first-child {
+    width: 60px;
+  }
+}
